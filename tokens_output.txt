@@ -1,0 +1,156 @@
+                         Lexical Analysis                         
+┏━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━┳━━━━━━━━┓
+┃ Token Type ┃              Lexeme               ┃ Line ┃ Column ┃
+┡━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━╇━━━━━━━━┩
+│ Identifier │                int                │  1   │   1    │
+│ Identifier │                num                │  1   │   5    │
+│  Operator  │                 =                 │  1   │   9    │
+│   Number   │                 5                 │  1   │   10   │
+│ Delimiter  │                 ;                 │  1   │   11   │
+│  Keyword   │                if                 │  2   │   1    │
+│ Delimiter  │                 (                 │  2   │   3    │
+│ Identifier │                num                │  2   │   4    │
+│  Operator  │                 >                 │  2   │   7    │
+│   Number   │                10                 │  2   │   8    │
+│ Delimiter  │                 )                 │  2   │   10   │
+│ Delimiter  │                 {                 │  2   │   12   │
+│  Keyword   │                if                 │  3   │   6    │
+│ Delimiter  │                 (                 │  3   │   8    │
+│ Identifier │                num                │  3   │   9    │
+│  Operator  │                 =                 │  3   │   12   │
+│  Operator  │                 =                 │  3   │   13   │
+│   Number   │                15                 │  3   │   14   │
+│ Delimiter  │                 )                 │  3   │   16   │
+│ Delimiter  │                 {                 │  3   │   18   │
+│ Identifier │               print               │  4   │   11   │
+│ Delimiter  │                 (                 │  4   │   16   │
+│   String   │        "The number is 15"         │  4   │   17   │
+│ Delimiter  │                 )                 │  4   │   35   │
+│ Delimiter  │                 ;                 │  4   │   36   │
+│ Delimiter  │                 }                 │  5   │   6    │
+│  Keyword   │               else                │  5   │   8    │
+│  Keyword   │                if                 │  5   │   13   │
+│ Delimiter  │                 (                 │  5   │   16   │
+│ Identifier │                num                │  5   │   17   │
+│  Operator  │                 =                 │  5   │   20   │
+│  Operator  │                 =                 │  5   │   21   │
+│   Number   │                16                 │  5   │   22   │
+│ Delimiter  │                 )                 │  5   │   24   │
+│ Delimiter  │                 {                 │  5   │   26   │
+│ Identifier │               print               │  6   │   11   │
+│ Delimiter  │                 (                 │  6   │   16   │
+│   String   │        "The number is 16"         │  6   │   17   │
+│ Delimiter  │                 )                 │  6   │   35   │
+│ Delimiter  │                 ;                 │  6   │   36   │
+│ Delimiter  │                 }                 │  7   │   6    │
+│  Keyword   │               else                │  7   │   8    │
+│ Delimiter  │                 {                 │  7   │   13   │
+│ Identifier │               print               │  8   │   11   │
+│ Delimiter  │                 (                 │  8   │   16   │
+│   String   │   "The number is not 15 or 16"    │  8   │   17   │
+│ Delimiter  │                 )                 │  8   │   45   │
+│ Delimiter  │                 ;                 │  8   │   46   │
+│ Delimiter  │                 }                 │  9   │   6    │
+│ Delimiter  │                 }                 │  10  │   1    │
+│  Keyword   │               else                │  10  │   3    │
+│  Keyword   │                if                 │  10  │   8    │
+│ Delimiter  │                 (                 │  10  │   11   │
+│ Identifier │                num                │  10  │   12   │
+│  Operator  │                 <                 │  10  │   15   │
+│   Number   │                 0                 │  10  │   16   │
+│ Delimiter  │                 )                 │  10  │   17   │
+│ Delimiter  │                 {                 │  10  │   19   │
+│  Keyword   │                if                 │  11  │   6    │
+│ Delimiter  │                 (                 │  11  │   8    │
+│ Identifier │                num                │  11  │   9    │
+│  Operator  │                 =                 │  11  │   12   │
+│  Operator  │                 =                 │  11  │   13   │
+│   Number   │                -5                 │  11  │   14   │
+│ Delimiter  │                 )                 │  11  │   16   │
+│ Delimiter  │                 {                 │  11  │   18   │
+│ Identifier │               print               │  12  │   11   │
+│ Delimiter  │                 (                 │  12  │   16   │
+│   String   │        "The number is –5"         │  12  │   17   │
+│ Delimiter  │                 )                 │  12  │   35   │
+│ Delimiter  │                 ;                 │  12  │   36   │
+│ Delimiter  │                 }                 │  13  │   6    │
+│  Keyword   │               else                │  13  │   8    │
+│  Keyword   │                if                 │  13  │   13   │
+│ Delimiter  │                 (                 │  13  │   15   │
+│ Identifier │                num                │  13  │   16   │
+│  Operator  │                 =                 │  13  │   20   │
+│  Operator  │                 =                 │  13  │   21   │
+│   Number   │                -6                 │  13  │   22   │
+│ Delimiter  │                 )                 │  13  │   24   │
+│ Delimiter  │                 {                 │  13  │   26   │
+│ Identifier │               print               │  14  │   11   │
+│ Delimiter  │                 (                 │  14  │   16   │
+│   String   │        "The number is –6"         │  14  │   17   │
+│ Delimiter  │                 )                 │  14  │   35   │
+│ Delimiter  │                 ;                 │  14  │   36   │
+│ Delimiter  │                 }                 │  15  │   6    │
+│  Keyword   │               else                │  15  │   8    │
+│ Delimiter  │                 {                 │  15  │   13   │
+│ Identifier │               print               │  16  │   11   │
+│ Delimiter  │                 (                 │  16  │   16   │
+│   String   │   "The number is not –6 or -5"    │  16  │   17   │
+│ Delimiter  │                 )                 │  16  │   45   │
+│ Delimiter  │                 ;                 │  16  │   46   │
+│ Delimiter  │                 }                 │  17  │   6    │
+│ Delimiter  │                 }                 │  18  │   1    │
+│  Keyword   │               else                │  18  │   3    │
+│ Delimiter  │                 {                 │  18  │   8    │
+│  Keyword   │                if                 │  19  │   6    │
+│ Delimiter  │                 (                 │  19  │   8    │
+│ Identifier │                num                │  19  │   9    │
+│  Operator  │                 =                 │  19  │   12   │
+│  Operator  │                 =                 │  19  │   13   │
+│   Number   │                 5                 │  19  │   14   │
+│ Delimiter  │                 )                 │  19  │   15   │
+│ Delimiter  │                 {                 │  19  │   17   │
+│ Identifier │               print               │  20  │   11   │
+│ Delimiter  │                 (                 │  20  │   16   │
+│   String   │         "The number is 5"         │  20  │   17   │
+│ Delimiter  │                 )                 │  20  │   34   │
+│ Delimiter  │                 }                 │  21  │   6    │
+│  Keyword   │               else                │  21  │   8    │
+│  Keyword   │                if                 │  21  │   13   │
+│ Delimiter  │                 (                 │  21  │   16   │
+│ Identifier │                num                │  21  │   17   │
+│  Operator  │                 =                 │  21  │   21   │
+│  Operator  │                 =                 │  21  │   22   │
+│   Number   │                 6                 │  21  │   23   │
+│ Delimiter  │                 )                 │  21  │   24   │
+│ Delimiter  │                 {                 │  21  │   26   │
+│ Identifier │               print               │  22  │   11   │
+│ Delimiter  │                 (                 │  22  │   16   │
+│   String   │         "The number is 6"         │  22  │   17   │
+│ Delimiter  │                 )                 │  22  │   34   │
+│ Delimiter  │                 ;                 │  22  │   35   │
+│ Delimiter  │                 }                 │  23  │   6    │
+│  Keyword   │               else                │  23  │   8    │
+│ Delimiter  │                 {                 │  23  │   13   │
+│ Identifier │               print               │  24  │   11   │
+│ Delimiter  │                 (                 │  24  │   16   │
+│   String   │    "The number is not 5 or 6"     │  24  │   17   │
+│ Delimiter  │                 )                 │  24  │   43   │
+│ Delimiter  │                 ;                 │  24  │   44   │
+│ Delimiter  │                 }                 │  25  │   6    │
+│ Delimiter  │                 }                 │  26  │   1    │
+│ Identifier │              context              │  32  │   1    │
+│ Identifier │        databaseTransaction        │  32  │   9    │
+│ Identifier │              execute              │  34  │   5    │
+│   String   │  "INSERT INTO users (name, age)   │  34  │   13   │
+│            │       VALUES ('Alice', 30)"       │      │        │
+│ Identifier │              execute              │  35  │   5    │
+│   String   │ "UPDATE users SET age = 31 WHERE  │  35  │   13   │
+│            │          name = 'Alice'"          │      │        │
+│  Keyword   │                if                 │  37  │   5    │
+│ Identifier │             hasError              │  37  │   8    │
+│ Delimiter  │                 (                 │  37  │   16   │
+│ Delimiter  │                 )                 │  37  │   17   │
+│ Identifier │             rollback              │  38  │   9    │
+│  Keyword   │               else                │  39  │   5    │
+│ Identifier │              commit               │  40  │   9    │
+│ Identifier │            endcontext             │  41  │   5    │
+└────────────┴───────────────────────────────────┴──────┴────────┘
