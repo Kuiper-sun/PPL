@@ -1,0 +1,41 @@
+int num =5;
+if(num>10) {
+     if(num==15) {
+          print("The number is 15");
+     } else if (num==16) {
+          print("The number is 16");
+     } else {
+          print("The number is not 15 or 16");
+     }
+} else if (num<0) {
+     if(num==-5) {
+          print("The number is –5");
+     } else if(num ==-6) {
+          print("The number is –6");
+     } else {
+          print("The number is not –6 or -5");
+     }
+} else {
+     if(num==5) {
+          print("The number is 5")
+     } else if (num ==6) {
+          print("The number is 6");
+     } else {
+          print("The number is not 5 or 6");
+     }
+}
+
+#/hello
+
+#/ hello /#
+
+context databaseTransaction
+
+    execute "INSERT INTO users (name, age) VALUES ('Alice', 30)"
+    execute "UPDATE users SET age = 31 WHERE name = 'Alice'"
+
+    if hasError()
+        rollback
+    else
+        commit
+    endcontext
